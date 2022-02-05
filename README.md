@@ -13,6 +13,7 @@ The steps below describe how to clone this repository for starting a new project
 1. Clone the template repository into the newly created folder: `git clone https://github.com/claucia/web-app-template.git .` (don't forget the `.` at the end, as it indicates the current folder).
 1. Change the remote URL in the local repository: `git remote set-url origin https://github.com/claucia/my-new-web-app.git`.
 1. Push the files to the remote repository: `git push`.
+1. Open the folder in Visual Studion Code: `code .`. 
 1. In GitHub, check if the files have been corretly pushed to the repository.
 1. You are ready to start the development (and remember to commit frequently).
 
