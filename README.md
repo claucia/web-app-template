@@ -2,6 +2,20 @@
 
 This is a web app template with [Parcel.js](https://parceljs.org/) suitable for most of my vanilla JavaScript projects.
 
+## Cloning the repository for starting a new project
+
+The steps below describe how to clone this repository for starting a new project, keeping the history.
+
+1. On GitHub, create a repository. To illustrate, let's call it `my-new-web-app` 
+1. Open Terminal.
+1. Create a folder for the project, matching the repository name: `md my-new-web-app`.
+1. Enter the newly created folder: `cd my-new-web-app`.
+1. Clone the template repository into the newly created folder: `git clone https://github.com/claucia/web-app-template.git .` (don't forget the `.` at the end, as it indicates the current folder).
+1. Change the remote URL in the local repository: `git remote set-url origin https://github.com/claucia/my-new-web-app.git`.
+1. Push the files to the remote repository: `git push`.
+1. In GitHub, check if the files have been corretly pushed to the repository.
+1. You are ready to start the development (and remember to commit frequently).
+
 ## Running the app for development
 
 1. Run `npm install` to download the dependencies. The `node_modules` folder will be created.
