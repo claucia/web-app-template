@@ -13,9 +13,13 @@ The steps below describe how to clone this repository for starting a new project
 1. Clone the template repository into the newly created folder: `git clone https://github.com/claucia/web-app-template.git .` (don't forget the `.` at the end, as it indicates the current folder).
 1. Change the remote URL in the local repository: `git remote set-url origin https://github.com/claucia/my-new-web-app.git`.
 1. Push the files to the remote repository: `git push`.
-1. Open the folder in Visual Studion Code: `code .`. 
 1. In GitHub, check if the files have been corretly pushed to the repository.
-1. You are ready to start the development (and remember to commit frequently).
+1. Still in Terminal, open the folder in Visual Studion Code: `code .`.
+1. Update the follow values in the `package.json` file:
+  - `name`
+  - `description`
+  - `public-url` parameter used int the `deploy` script (it should match your new repository name: `/my-new-web-app`).
+1. You are ready to start the development. Remember to commit frequently!
 
 ## Running the app for development
 
@@ -33,6 +37,5 @@ Run `npm run build` to build the application. The application artifacts will be 
 
 ## Deploying the app in GitHub Pages
 
-1. In the `package.json` file, review the value of the `public-url` parameter used in the `deploy` script. It should match your repository name.
 1. Run `npm run deploy` to build and deploy the application in GitHub Pages. The application artifacts will be available in the `dist` folder, and then copied to the `gh-pages` branch. 
 1. Push the changes to GitHub. The `gh-pages` branch will be used by GitHub Pages to make the static content available in the web.
