@@ -16,9 +16,9 @@ The steps below describe how to clone this repository for starting a new project
 1. In GitHub, check if the files have been corretly pushed to the repository.
 1. Still in Terminal, open the folder in Visual Studion Code: `code .`.
 1. Update the follow values in the `package.json` file:
-  - `name`
-  - `description`
-  - `public-url` parameter used int the `deploy` script (it should match your new repository name: `/my-new-web-app`).
+   - `name`
+   - `description`
+   - `public-url` parameter used int the `deploy` script (it should match your new repository name: `/my-new-web-app`).
 1. Update the contents of the `README.md` file. You probably can remove the section `Cloning the repository for starting a new project`, as it's only meaningful for this template.
 1. You are ready to start the development. Remember to commit frequently!
 
