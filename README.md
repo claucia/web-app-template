@@ -33,4 +33,6 @@ Run `npm run build` to build the application. The application artifacts will be 
 
 ## Deploying the app in GitHub Pages
 
-Run `npm run deploy` to build and deploy the application in GitHub Pages. The application artifacts will be available in the `dist` folder, and then copied to the `gh-pages` branch. Push the changes to GitHub. The `gh-pages` branch will be used by GitHub Pages to make the static content available in the web.
+1. In the `package.json` file, review the value of the `public-url` parameter used in the `deploy` script. It should match your repository name.
+1. Run `npm run deploy` to build and deploy the application in GitHub Pages. The application artifacts will be available in the `dist` folder, and then copied to the `gh-pages` branch. 
+1. Push the changes to GitHub. The `gh-pages` branch will be used by GitHub Pages to make the static content available in the web.
