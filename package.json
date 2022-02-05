@@ -5,10 +5,7 @@
     "name": "Claucia Cambruzzi",
     "url": "https://claucia.com"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/claucia/web-app-template"
-  },
+  "private": true,
   "devDependencies": {
     "@parcel/packager-raw-url": "^2.1.1",
     "@parcel/transformer-sass": "^2.1.1",
