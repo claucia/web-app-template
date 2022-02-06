@@ -10,7 +10,7 @@ The steps below describe how to clone this repository for starting a new project
 1. Open Terminal.
 1. Create a folder for the project, matching the repository name: `md my-new-web-app`.
 1. Enter the newly created folder: `cd my-new-web-app`.
-1. Clone the template repository into the newly created folder: `git clone https://github.com/claucia/web-app-template.git .` (don't forget the `.` at the end, as it indicates the current folder).
+1. Clone the template repository into the newly created folder: `git clone https://github.com/claucia/web-app-template-parceljs.git .` (don't forget the `.` at the end, as it indicates the current folder).
 1. Change the remote URL in the local repository: `git remote set-url origin https://github.com/claucia/my-new-web-app.git`.
 1. Push the files to the remote repository: `git push`.
 1. In GitHub, check if the files have been corretly pushed to the repository.
