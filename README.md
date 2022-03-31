@@ -10,7 +10,7 @@ This is a web app template with [Parcel.js](https://parceljs.org/) suitable for 
 1. Update the following values in the `package.json` file:
    - `name`
    - `description`
-   - `public-url` parameter used in the `deploy` script. It should match your newly created repository name.
+   - `public-url` parameter used in the `build` script. It should match your newly created repository name.
 1. Run `npm install` to download the dependencies. It should create the `node_modules` folder and update the `package-lock.json` file.
 1. Update the contents of the `README.md` file:
    - Update the title.
@@ -33,7 +33,15 @@ This is a web app template with [Parcel.js](https://parceljs.org/) suitable for 
 
 Run `npm run build` to build the application. The application artifacts will be available in the `dist` folder.
 
-## Deploying the app in GitHub Pages
+## Deploying the app in Netlify
 
-1. Run `npm run deploy` to build and deploy the application in GitHub Pages. The application artifacts will be available in the `dist` folder, and then copied to the `gh-pages` branch. 
-1. Push the changes to GitHub. The `gh-pages` branch will be used by GitHub Pages to make the static content available in the web.
+1. Open Netlify: [`https://app.netlify.com`](https://app.netlify.com).
+1. Under the _Sites_ section, click the _Add new site_ button, and select _Import an existing project_.
+1. Select _GitHub_. Grant access to Netlify if necessary.
+1. Pick this repository from the list.
+1. Review the site settings. You'll most likely want to deploy from the `main` branch.
+1. Click the _Deploy site_ button.
+1. Wait until the deploy completes (refresh the page if necessary).
+1. Netlify will create a site name such as `clever-dasik-b326ad`. It will also create a URL like `https://clever-dasik-b326ad.netlify.app`. To modify it, click the _Site settings_ button, and then click the _Change site name_ button.
+1. To make this content available under `https://portfolio.claucia.com` or `https://claucia.netflify.app`, update the [`_redirects`](https://github.com/claucia/portfolio-netlify/blob/main/_redirects) file in the [`portfolio-netlify`](https://github.com/claucia/portfolio-netlify) repository.
+1. When changes are pushed to GitHub, Netlify will automatically build and deploy the changes.
