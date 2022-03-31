@@ -44,4 +44,4 @@ Run `npm run build` to build the application. The application artifacts will be 
 1. Wait until the deploy completes (refresh the page if necessary).
 1. Netlify will create a site name such as `clever-dasik-b326ad`. It will also create a URL like `https://clever-dasik-b326ad.netlify.app`. To modify it, click the _Site settings_ button, and then click the _Change site name_ button.
 1. To make this content available under `https://portfolio.claucia.com` or `https://claucia.netflify.app`, update the [`_redirects`](https://github.com/claucia/portfolio-netlify/blob/main/_redirects) file in the [`portfolio-netlify`](https://github.com/claucia/portfolio-netlify) repository.
-1. When changes are pushed to GitHub, Netlify will automatically build and deploy the changes.
+1. When changes are pushed to GitHub, Netlify will automatically build and deploy them.
