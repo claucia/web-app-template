@@ -43,5 +43,12 @@ Run `npm run build` to build the application. The application artifacts will be 
 1. Click the _Deploy site_ button.
 1. Wait until the deploy completes (refresh the page if necessary).
 1. Netlify will create a site name such as `clever-dasik-b326ad`. It will also create a URL like `https://clever-dasik-b326ad.netlify.app`. To modify it, click the _Site settings_ button, and then click the _Change site name_ button.
-1. To make this content available under `https://portfolio.claucia.com` or `https://claucia.netflify.app`, update the [`_redirects`](https://github.com/claucia/portfolio-netlify/blob/main/_redirects) file in the [`portfolio-netlify`](https://github.com/claucia/portfolio-netlify) repository.
+1. You'll notice that CSS, JavaScript and other resources won't load. It's related to the `public-url` parameter used in the `build` script. And the site is not meant to be accessed from the URL provided by Netlify. Instead, it should be made available under `https://portfolio.claucia.com` or `https://claucia.netflify.app`.
+1. To ensure that the content is served correctly, make some changes to the [`_redirects`](https://github.com/claucia/portfolio-netlify/blob/main/_redirects) file in the [`portfolio-netlify`](https://github.com/claucia/portfolio-netlify) repository:
+   1. Add a new line to the file, just before the line starting with `/*`.
+   1. The new line should contain the following values:
+      - Value of the `public-url` parameter used in the `build` script, followed by `/*`.
+      - URL of the Netlify application, followed by `/:splat`.
+      - `200` to indicate that the URL must be rewritten.
+   1. Commit the changes.
 1. When changes are pushed to GitHub, Netlify will automatically build and deploy them.
